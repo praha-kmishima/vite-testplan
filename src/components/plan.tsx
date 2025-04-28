@@ -1,4 +1,4 @@
-const Plan = () => {
+export const Plan = () => {
 	return (
 		<div className="hotel-app">
 			<header>

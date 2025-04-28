@@ -1,12 +1,12 @@
-import './App.css'
+import "./App.css";
+import { Plan } from "./components/plan";
 
 function App() {
-
-  return (
-    <>
-      <div>HOTEL PLANISPHERE</div>
-    </>
-  )
+	return (
+		<>
+			<Plan />
+		</>
+	);
 }
 
-export default App
+export default App;
