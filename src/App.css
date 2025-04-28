@@ -65,13 +65,18 @@ nav ul li a {
 /* メインコンテンツエリア */
 main {
 	background-color: white;
-	padding: 2rem;
+	padding: 3rem 2rem; /* py-5相当 */
+	max-width: 1140px; /* containerの最大幅相当 */
+	margin: 0 auto;
 }
 
 main h2 {
 	font-size: 1.8rem;
 	margin-bottom: 2rem;
-	text-align: center;
+	text-align: left; /* 左寄せに変更 */
+	max-width: 960px; /* col-lg-9 mx-auto相当 */
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* プラン一覧のグリッドレイアウト */
@@ -79,6 +84,8 @@ main h2 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); /* PCビュー: 3列 */
 	gap: 1.5rem;
+	max-width: 1140px; /* containerの最大幅相当 */
+	margin: 0 auto;
 }
 
 /* カードコンポーネントのスタイル */
@@ -88,13 +95,20 @@ main h2 {
 	margin-bottom: 1.5rem;
 	background-color: #fff;
 	text-align: center;
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* shadow-sm相当 */
+}
+
+/* プランカラムのスタイル */
+.plan-column {
+	margin-bottom: 1rem;
 }
 
 .featured {
 	margin-bottom: 2rem;
-	max-width: 600px;
+	max-width: 960px; /* col-lg-9 mx-auto相当 */
 	margin-left: auto;
 	margin-right: auto;
+	padding: 2.5rem 0; /* py-5相当 */
 }
 
 .plan-header {

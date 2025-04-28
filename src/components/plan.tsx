@@ -25,107 +25,127 @@ export const Plan = () => {
 				</nav>
 			</header>
 			<main>
-				<h2>宿泊プラン一覧</h2>
+				<div className="row">
+					<h2>宿泊プラン一覧</h2>
+				</div>
 
 				{/* おすすめプラン */}
-				<div className="plan-card featured">
-					<div className="plan-header">⭐おすすめプラン⭐</div>
-					<div className="plan-content">
-						<h3>お得な特典付きプラン</h3>
-						<p>大人1名7,000円</p>
-						<p>1名様から</p>
-						<p>スタンダードツイン</p>
-						<button type="button" className="reserve-btn">
-							このプランで予約
-						</button>
+				<div className="row">
+					<div className="featured">
+						<div className="plan-card">
+							<div className="plan-header">⭐おすすめプラン⭐</div>
+							<div className="plan-content">
+								<h3>お得な特典付きプラン</h3>
+								<p>大人1名7,000円</p>
+								<p>1名様から</p>
+								<p>スタンダードツイン</p>
+								<button type="button" className="reserve-btn">
+									このプランで予約
+								</button>
+							</div>
+							<div className="plan-footer">本日限り</div>
+						</div>
 					</div>
-					<div className="plan-footer">本日限り</div>
 				</div>
 
 				{/* 宿泊プラン一覧 */}
-				<div className="plan-list">
-					{/* 素泊まり */}
-					<div className="plan-card">
-						<div className="plan-content">
-							<h3>素泊まり</h3>
-							<p>大人1名5,500円</p>
-							<p>1名様から</p>
-							<p>シングル</p>
-							<button type="button" className="reserve-btn">
-								このプランで予約
-							</button>
+				<div className="row">
+					<div className="plan-list">
+						{/* 素泊まり */}
+						<div className="plan-column">
+							<div className="plan-card">
+								<div className="plan-content">
+									<h3>素泊まり</h3>
+									<p>大人1名5,500円</p>
+									<p>1名様から</p>
+									<p>シングル</p>
+									<button type="button" className="reserve-btn">
+										このプランで予約
+									</button>
+								</div>
+							</div>
 						</div>
-					</div>
 
-					{/* 出張ビジネスプラン */}
-					<div className="plan-card">
-						<div className="plan-content">
-							<h3>出張ビジネスプラン</h3>
-							<p>大人1名7,500円</p>
-							<p>1名様から</p>
-							<p>シングル</p>
-							<button type="button" className="reserve-btn">
-								このプランで予約
-							</button>
+						{/* 出張ビジネスプラン */}
+						<div className="plan-column">
+							<div className="plan-card">
+								<div className="plan-content">
+									<h3>出張ビジネスプラン</h3>
+									<p>大人1名7,500円</p>
+									<p>1名様から</p>
+									<p>シングル</p>
+									<button type="button" className="reserve-btn">
+										このプランで予約
+									</button>
+								</div>
+							</div>
 						</div>
-					</div>
 
-					{/* エステ・マッサージプラン */}
-					<div className="plan-card">
-						<div className="plan-content">
-							<h3>エステ・マッサージプラン</h3>
-							<p>大人1名9,000円</p>
-							<p>1名様から</p>
-							<p>部屋指定なし</p>
-							<button type="button" className="reserve-btn">
-								このプランで予約
-							</button>
+						{/* エステ・マッサージプラン */}
+						<div className="plan-column">
+							<div className="plan-card">
+								<div className="plan-content">
+									<h3>エステ・マッサージプラン</h3>
+									<p>大人1名9,000円</p>
+									<p>1名様から</p>
+									<p>部屋指定なし</p>
+									<button type="button" className="reserve-btn">
+										このプランで予約
+									</button>
+								</div>
+							</div>
 						</div>
-					</div>
 
-					{/* 貸し切り露天風呂プラン */}
-					<div className="plan-card">
-						<div className="plan-content">
-							<h3>貸し切り露天風呂プラン</h3>
-							<p>大人1名9,000円</p>
-							<p>1名様から</p>
-							<p>部屋指定なし</p>
-							<button type="button" className="reserve-btn">
-								このプランで予約
-							</button>
+						{/* 貸し切り露天風呂プラン */}
+						<div className="plan-column">
+							<div className="plan-card">
+								<div className="plan-content">
+									<h3>貸し切り露天風呂プラン</h3>
+									<p>大人1名9,000円</p>
+									<p>1名様から</p>
+									<p>部屋指定なし</p>
+									<button type="button" className="reserve-btn">
+										このプランで予約
+									</button>
+								</div>
+							</div>
 						</div>
-					</div>
 
-					{/* カップル限定プラン */}
-					<div className="plan-card">
-						<div className="plan-content">
-							<h3>カップル限定プラン</h3>
-							<p>大人1名8,000円</p>
-							<p>2名様から</p>
-							<p>プレミアムツイン</p>
-							<button type="button" className="reserve-btn">
-								このプランで予約
-							</button>
+						{/* カップル限定プラン */}
+						<div className="plan-column">
+							<div className="plan-card">
+								<div className="plan-content">
+									<h3>カップル限定プラン</h3>
+									<p>大人1名8,000円</p>
+									<p>2名様から</p>
+									<p>プレミアムツイン</p>
+									<button type="button" className="reserve-btn">
+										このプランで予約
+									</button>
+								</div>
+							</div>
 						</div>
-					</div>
 
-					{/* テーマパーク優待プラン */}
-					<div className="plan-card">
-						<div className="plan-content">
-							<h3>テーマパーク優待プラン</h3>
-							<p>大人1名10,000円</p>
-							<p>1名様から</p>
-							<p>部屋指定なし</p>
-							<button type="button" className="reserve-btn">
-								このプランで予約
-							</button>
+						{/* テーマパーク優待プラン */}
+						<div className="plan-column">
+							<div className="plan-card">
+								<div className="plan-content">
+									<h3>テーマパーク優待プラン</h3>
+									<p>大人1名10,000円</p>
+									<p>1名様から</p>
+									<p>部屋指定なし</p>
+									<button type="button" className="reserve-btn">
+										このプランで予約
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</main>
 			<footer>
 				<a href="https://github.com">GitHub</a>
-				<p>© 2020-2025 Takeshi Kishi</p>
+				<p>© 2020-2025 Kensuke Mishima</p>
 			</footer>
 		</div>
 	);
