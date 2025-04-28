@@ -9,7 +9,9 @@ export const Plan = () => {
 							<a href="/">ホーム</a>
 						</li>
 						<li>
-							<a href="/reserve">宿泊予約</a>
+							<a href="/reserve" className="active-link">
+								宿泊予約
+							</a>
 						</li>
 						<li>
 							<a href="/register">会員登録</a>
