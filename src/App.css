@@ -11,10 +11,13 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-family:
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 header h1 {
-	margin: 0.5em 0;
+	margin: 40px 0;
+	padding: 0px;
 	font-size: 72px;
 	font-weight: 200;
 	color: #212529;
