@@ -71,8 +71,8 @@ main {
 }
 
 main h2 {
-	font-size: 1.8rem;
-	margin-bottom: 2rem;
+	font-size: 2rem;
+	font-weight: 500;
 	text-align: left; /* 左寄せに変更 */
 	max-width: 960px; /* col-lg-9 mx-auto相当 */
 	margin-left: auto;
@@ -83,7 +83,8 @@ main h2 {
 .plan-list {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); /* PCビュー: 3列 */
-	gap: 1.5rem;
+	gap: 2rem;
+	row-gap: 0.5rem;
 	max-width: 1140px; /* containerの最大幅相当 */
 	margin: 0 auto;
 }
@@ -92,7 +93,6 @@ main h2 {
 .plan-card {
 	border: 1px solid rgba(0, 0, 0, 0.125);
 	border-radius: 0.25rem;
-	margin-bottom: 1.5rem;
 	background-color: #fff;
 	text-align: center;
 	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* shadow-sm相当 */
@@ -100,11 +100,11 @@ main h2 {
 
 /* プランカラムのスタイル */
 .plan-column {
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 .featured {
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	max-width: 960px; /* col-lg-9 mx-auto相当 */
 	margin-left: auto;
 	margin-right: auto;
@@ -123,15 +123,17 @@ main h2 {
 
 .plan-content h3 {
 	margin-top: 0;
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 	font-size: 1.25rem;
+	font-weight: 500;
 }
 
 .plan-content p {
-	margin: 0.5rem 0;
+	margin: 0;
 }
 
 .plan-footer {
+	color: #6c757d;
 	padding: 0.75rem 1.25rem;
 	background-color: rgba(0, 0, 0, 0.03);
 	border-top: 1px solid rgba(0, 0, 0, 0.125);
