@@ -220,7 +220,8 @@ footer p {
 		font-weight: bold;
 		padding: 8px;
 		display: block;
-		text-align: center;
+		text-align: left;
+		padding-left: 20px;
 	}
 
 	/* ハンバーガーボタンを表示 */
@@ -236,7 +237,7 @@ footer p {
 		width: 100%;
 		background-color: #343a40;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 		max-height: 0;
 		overflow: hidden;
 		transition: max-height 0.5s ease;
@@ -260,7 +261,8 @@ footer p {
 	nav ul li {
 		margin: 8px 0; /* 上下の余白を追加 */
 		width: 100%;
-		text-align: center;
+		text-align: left;
+		padding-left: 20px;
 	}
 
 	/* プラン一覧 */
