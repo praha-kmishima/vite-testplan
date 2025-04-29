@@ -1,9 +1,28 @@
+import { useState } from "react";
+
 export const Plan = () => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
+
 	return (
 		<div className="hotel-app">
 			<header>
 				<h1>HOTEL PLANISPHERE</h1>
-				<nav>
+				<nav className={isMenuOpen ? "menu-open" : ""}>
+					<button
+						type="button"
+						className="hamburger-button"
+						onClick={toggleMenu}
+						aria-label="メニューを開閉"
+						aria-expanded={isMenuOpen}
+					>
+						<span />
+						<span />
+						<span />
+					</button>
 					<ul>
 						<li>
 							<a href="/">ホーム</a>
