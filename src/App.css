@@ -180,3 +180,68 @@ footer p {
 }
 
 /* レスポンシブデザイン */
+/* PC向け（992px以上） - デフォルトスタイル */
+
+/* タブレット向け（768px〜991px） */
+@media (max-width: 991px) {
+	/* ヘッダー */
+	header h1 {
+		display: none; /* 大きなロゴを非表示 */
+	}
+
+	nav::before {
+		content: "HOTEL PLANISPHERE";
+		color: white;
+		font-weight: bold;
+		padding: 8px;
+		display: block;
+		text-align: center;
+	}
+
+	/* プラン一覧 */
+	.plan-list {
+		grid-template-columns: repeat(2, 1fr); /* 2列に変更 */
+	}
+}
+
+/* モバイル向け（767px以下） */
+@media (max-width: 767px) {
+	/* ナビゲーション */
+	nav ul {
+		flex-direction: column; /* 縦並びに変更 */
+		align-items: center;
+	}
+
+	nav ul li {
+		margin: 8px 0; /* 上下の余白を追加 */
+		width: 100%;
+		text-align: center;
+	}
+
+	/* プラン一覧 */
+	.plan-list {
+		grid-template-columns: 1fr; /* 1列に変更 */
+	}
+
+	/* カードデザイン */
+	.plan-card {
+		max-width: 100%; /* 幅を最大に */
+	}
+
+	.plan-content {
+		padding: 1rem; /* 余白を少し縮小 */
+	}
+
+	.reserve-btn {
+		width: 100%; /* ボタンを幅いっぱいに */
+	}
+
+	/* メインコンテンツとフッター */
+	main {
+		padding: 1.5rem 1rem; /* 余白縮小 */
+	}
+
+	footer {
+		padding: 1.5rem 0; /* 余白縮小 */
+	}
+}
